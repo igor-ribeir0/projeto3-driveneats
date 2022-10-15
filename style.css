@@ -98,10 +98,12 @@ h3{
     height: 28.647214854111407vh;
     border-radius: 0.5625rem;
     background-color: #FFFFFF;
+    border: 4px solid #FFFFFF;
     margin-left: 16px;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    position: relative;
 }
 
 .imagemCardapio{
@@ -191,3 +193,18 @@ span{
     margin-top: 10px;
 }
 /*FIM SELEÇÃO DE ITENS*/
+
+.escondido{
+    display: none;
+}
+
+.selecionado{
+    border: 4px solid green;
+    border-radius: 0.5625rem;
+}
+
+.icon{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
