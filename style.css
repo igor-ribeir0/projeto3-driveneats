@@ -177,6 +177,7 @@ h4{
     border-radius: 3.125rem;
     background-color: #CBCBCB;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
@@ -189,8 +190,8 @@ span{
     font-size: 1.25rem;
     line-height: 1.4375rem;
     color: #FFFFFF;
-    margin-left: 100px;
-    margin-top: 10px;
+    margin-left: 180px;
+    margin-top: 4px;
 }
 /*FIM SELEÇÃO DE ITENS*/
 
@@ -198,13 +199,3 @@ span{
     display: none;
 }
 
-.selecionado{
-    border: 4px solid green;
-    border-radius: 0.5625rem;
-}
-
-.icon{
-    position: absolute;
-    right: 0;
-    bottom: 0;
-}
