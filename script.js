@@ -7,7 +7,7 @@ function prato1(){
     document.getElementById("prato1").style.borderColor = "green";
     document.getElementById("prato2").style.borderColor = "#FFFFFF";
     document.getElementById("prato3").style.borderColor = "#FFFFFF";
-    prato = "prato1";
+    prato = "Frango Yin Yang Normal";
 
     if(prato !== null && bebida !== null && sobremesa !== null){
         document.getElementById("bt").style.backgroundColor = "green";
@@ -20,7 +20,7 @@ function prato2(){
     document.getElementById("prato2").style.borderColor = "green";
     document.getElementById("prato1").style.borderColor = "#FFFFFF";
     document.getElementById("prato3").style.borderColor = "#FFFFFF";
-    prato = "prato2";
+    prato = "Frango Yin Yang Especial";
 
     if(prato !== null && bebida !== null && sobremesa !== null){
         document.getElementById("bt").style.backgroundColor = "green";
@@ -33,7 +33,7 @@ function prato3(){
     document.getElementById("prato3").style.borderColor = "green";
     document.getElementById("prato1").style.borderColor = "#FFFFFF";
     document.getElementById("prato2").style.borderColor = "#FFFFFF";
-    prato = "prato3";
+    prato = "Frango Yin Yang Gourmet";
 
     if(prato !== null && bebida !== null && sobremesa !== null){
         document.getElementById("bt").style.backgroundColor = "green";
@@ -48,7 +48,7 @@ function bebida1(){
     document.getElementById("bebida1").style.borderColor = "green";
     document.getElementById("bebida2").style.borderColor = "#FFFFFF";
     document.getElementById("bebida3").style.borderColor = "#FFFFFF";
-    bebida = "bebida1";
+    bebida = "coca gelada";
 
     if(prato !== null && bebida !== null && sobremesa !== null){
         document.getElementById("bt").style.backgroundColor = "green";
@@ -61,7 +61,7 @@ function bebida2(){
     document.getElementById("bebida2").style.borderColor = "green";
     document.getElementById("bebida1").style.borderColor = "#FFFFFF";
     document.getElementById("bebida3").style.borderColor = "#FFFFFF";
-    bebida = "bebida2";
+    bebida = "coca quente";
 
     if(prato !== null && bebida !== null && sobremesa !== null){
         document.getElementById("bt").style.backgroundColor = "green";
@@ -74,7 +74,7 @@ function bebida3(){
     document.getElementById("bebida3").style.borderColor = "green";
     document.getElementById("bebida1").style.borderColor = "#FFFFFF";
     document.getElementById("bebida2").style.borderColor = "#FFFFFF";
-    bebida = "bebida3";
+    bebida = "coca vencida";
 
     if(prato !== null && bebida !== null && sobremesa !== null){
         document.getElementById("bt").style.backgroundColor = "green";
@@ -89,7 +89,7 @@ function sobremesa1(){
     document.getElementById("sobremesa1").style.borderColor = "green";
     document.getElementById("sobremesa2").style.borderColor = "#FFFFFF";
     document.getElementById("sobremesa3").style.borderColor = "#FFFFFF";
-    sobremesa = "sobremesa1";
+    sobremesa = "pudim normal";
 
     if(prato !== null && bebida !== null && sobremesa !== null){
         document.getElementById("bt").style.backgroundColor = "green";
@@ -102,7 +102,7 @@ function sobremesa2(){
     document.getElementById("sobremesa2").style.borderColor = "green";
     document.getElementById("sobremesa1").style.borderColor = "#FFFFFF";
     document.getElementById("sobremesa3").style.borderColor = "#FFFFFF";
-    sobremesa = "sobremesa2";
+    sobremesa = "pudim com cabelo";
 
     if(prato !== null && bebida !== null && sobremesa !== null){
         document.getElementById("bt").style.backgroundColor = "green";
@@ -115,7 +115,7 @@ function sobremesa3(){
     document.getElementById("sobremesa3").style.borderColor = "green";
     document.getElementById("sobremesa1").style.borderColor = "#FFFFFF";
     document.getElementById("sobremesa2").style.borderColor = "#FFFFFF";
-    sobremesa = "sobremesa3";
+    sobremesa = "pudim estragado";
 
     if(prato !== null && bebida !== null && sobremesa !== null){
         document.getElementById("bt").style.backgroundColor = "green";
@@ -126,5 +126,14 @@ function sobremesa3(){
 /*FIM SOBREMESA*/
 
 /*INÍCIO BOTÃO*/
+function finalizarPedido(){
+    let mensagem;
+    mensagem =
+        "Olá, gostaria de fazer o pedido: \n" +
+        "\n" + "-Prato: " + prato + "\n" +
+        "\n" + "-Bebida: " + bebida +  "\n" +
+        "-Sobremesa: " + sobremesa;
 
+    window.open("https://wa.me/+5521999999999?text=" + mensagem);
+}
 /*FIM BOTÃO*/
